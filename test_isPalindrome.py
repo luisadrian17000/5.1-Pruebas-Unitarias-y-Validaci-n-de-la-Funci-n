@@ -13,8 +13,8 @@ def is_palindrome(s: str) -> bool:
         i += 1
         j -= 1
     
-    if is_palindrome:
-        return True 
+    
+    return True 
 
 
 
@@ -31,8 +31,20 @@ def test_palindrome_number():
 
 
 
-def test_is_not_palindrome():
+def test_is_not_palindrome_number():
     assert is_palindrome("8548745237984598494392022") == False
+
+
+def test_is_not_palindrome_string():
+    assert is_palindrome("asdfkjhajksbcbyedbfala") == False
+
+
+def test_solo_dos_caracteres():
+    assert is_palindrome("ab") == False
+    
+
+
+
 
 
 

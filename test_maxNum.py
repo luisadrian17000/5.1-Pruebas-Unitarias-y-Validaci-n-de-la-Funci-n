@@ -93,10 +93,10 @@ def test_find_max_in_end():
 
 
 
-def test_find_max_in_middle():
-    assert find_max([
-    123, 3, 324234234234, 10000000000000000, -999999999999, 0, 1
-])  == 10000000000000000
+def test_solo_un_elemento():
+    assert find_max([7]) == 7
+
+
 
 
     
